@@ -6,7 +6,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h3>Tambah Penyakit</h3>
+							<h3>Tambah </h3>
 							<br>
 							<form action="<?php echo site_url() ?>/penyakit/create" method = "POST">
 								<div class="container">
@@ -42,7 +42,7 @@
 										</div>
 									</div>
 
-									<br>
+									<!-- <br>
 
 									<div class="row">
 										<div class="col-md-2" style="margin-bottom: 5px;">
@@ -51,11 +51,11 @@
 										<div class="col-md-12">
 											<input type="text" name="solusi" class="form-control" style="font-size: 12px;">
 										</div>
-									</div>
+									</div> -->
 									
 									<br>
 
-									<button type="submit" name="submit" class="btn btn-primary btn-sm" style="border-radius: 0px; background: #3399cc; border-color: #3399cc;">Simpan</button>
+									<button type="submit" name="submit" class="btn btn-primary btn-sm" style="border-radius: 0px; background: #666666; border-color: #666666;">Simpan</button>
 									<a href="<?php echo site_url('/penyakit/index') ?>" class="btn btn-default btn-flat btn-sm" style="border-radius: 0px;">Batal</a>
 								</div>
 							</form>

@@ -4,16 +4,26 @@
 		<div class="row d-flex justify-content-center">
 			<div class="menu-content pb-60 col-lg-6">
 				<div class="title text-center">
-					<h2 style="margin-bottom: 0px;">Diagnosa</h2><br>
+				<!-- 	<h2 style="margin-bottom: 0px;">Diagnosa</h2><br> -->
 					<!-- <h2>Penyakit Ibu Hamil</h2> -->
-					<p>Silahkan pilih gejala yang diderita...</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+
+					<p>Silahkan Pilih Gejala Penyakit Anda.....</p>
 				</div>
 			</div>
 		</div>
 		<div class="row d-flex justify-content-center">
 			<div class="col-md-6 col-md-offset-2" >
 				<?php foreach($listKelompok->result() as $value){?>
-				<span style="font-weight: bold;" ><?php echo $value->nama?></span><br>
+				<span style="font-weight: bold;" ><?php echo $value->nama_klp?></span><br>
 					<?php
                     $this->load->model(array('Gejala_model'));
                     $listGejala = $this->Gejala_model->get_by_kelompok($value->id);

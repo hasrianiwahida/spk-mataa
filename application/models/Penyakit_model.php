@@ -12,11 +12,11 @@ class Penyakit_model extends CI_Model {
 		$kd_penyakit =$this->input->post('kd_penyakit');
 		$nama_penyakit =$this->input->post('nama_penyakit');
 		$definisi =$this->input->post('definisi');
-		$solusi =$this->input->post('solusi');
+	
 
-		$query = $this->db->query("INSERT INTO tbl_penyakit (kd_penyakit,nama_penyakit,definisi,solusi)
+		$query = $this->db->query("INSERT INTO tbl_penyakit (kd_penyakit,nama_penyakit,definisi)
 									VALUES 
-									('$kd_penyakit','$nama_penyakit','$definisi','$solusi')");
+									('$kd_penyakit','$nama_penyakit','$definisi')");
 			return $query; 
 	}
 
@@ -29,13 +29,13 @@ class Penyakit_model extends CI_Model {
 		$kd_penyakit =$this->input->post('kd_penyakit');
 		$nama_penyakit =$this->input->post('nama_penyakit');
 		$definisi =$this->input->post('definisi');
-		$solusi =$this->input->post('solusi');
+		// $solusi =$this->input->post('solusi');
 
 		$data =array(
 			'kd_penyakit'=>$kd_penyakit,
 			'nama_penyakit'=>$nama_penyakit,
 			'definisi'=>$definisi,
-			'solusi'=>$solusi,
+			// 'solusi'=>$solusi,
 
 		);
 		$this->db->where('id_penyakit',$id_penyakit);

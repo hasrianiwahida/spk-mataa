@@ -6,7 +6,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h3>Tambah nilaicf</h3>
+							<h3>Tambah </h3>
 							<br>
 							<form action="<?php echo site_url() ?>/nilaicf/create" method = "POST">
 								<div class="container">
@@ -28,7 +28,16 @@
 											<span>Gejala : </span>
 										</div>
 										<div class="col-md-12">
-											<input type="text" name="gejala_id" class="form-control" style="font-size: 12px;">
+											<select name="gejala_id" class="form-control ">
+                                                <option>-Pilih-</option>
+                                                <?php $data = $this->Nilaicf_model->getgejala();
+
+                                                ?>
+                                                <?php foreach ($data->result() as $key){ ?>
+                                                  <option value="<?php echo $key->id_gejala?>"><?php echo $key->gejala; ?></option>
+                                                <?php } ?> 
+                                              
+                                              </select>
 										</div>
 									</div>
 
@@ -38,7 +47,16 @@
 											<span>Penyakit : </span>
 										</div>
 										<div class="col-md-12">
-											<input type="text" name="penyakit_id" class="form-control" style="font-size: 12px;">
+											<select name="penyakit_id" class="form-control ">
+                                                <option>-Pilih-</option>
+                                                <?php $data = $this->Nilaicf_model->getpenyakit();
+
+                                                ?>
+                                                <?php foreach ($data->result() as $key){ ?>
+                                                  <option value="<?php echo $key->id_penyakit?>"><?php echo $key->nama_penyakit; ?></option>
+                                                <?php } ?> 
+                                              
+                                              </select>
 										</div>
 									</div>
 
@@ -76,7 +94,7 @@
 									
 									<br>
 
-									<button type="submit" name="submit" class="btn btn-primary btn-sm" style="border-radius: 0px; background: #3399cc; border-color: #3399cc;">Simpan</button>
+									<button type="submit" name="submit" class="btn btn-primary btn-sm" style="border-radius: 0px; background: #666666; border-color: #666666;">Simpan</button>
 									<a href="<?php echo site_url('/nilaicf/index') ?>" class="btn btn-default btn-flat btn-sm" style="border-radius: 0px;">Batal</a>
 								</div>
 							</form>

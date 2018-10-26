@@ -3,7 +3,7 @@ class Nilaicf_model extends CI_Model {
 
 	public function get_nilaicf(){
 
-		return $this->db->select('*, tbl_nilaicf.id')
+		return $this->db->select('*, tbl_nilaicf.id, tbl_gejala.id_gejala as gpid')
 						->from('tbl_nilaicf')
 						->join('tbl_gejala', 'tbl_gejala.id_gejala = tbl_nilaicf.gejala_id' )
 						->join('tbl_penyakit', 'tbl_penyakit.id_penyakit = tbl_nilaicf.penyakit_id' )
@@ -89,6 +89,17 @@ public function edit(){
         $sql=$sql." order by gejala_id";
          return $this->db->query($sql);
      }
+
+     public function getgejala()
+     {
+     	return $this->db->get('tbl_gejala');
+     }
+
+     public function getpenyakit()
+     {
+     	return $this->db->get('tbl_penyakit');
+     }
+
 }
 
 

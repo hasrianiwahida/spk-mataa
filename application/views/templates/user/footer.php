@@ -24,11 +24,11 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-             dr.Hasriani <br>
+             dr.Miftahul Akhyar Latief,Sp.M <br>
               Makassar<br>
              <!--  United States <br> -->
               <strong>Phone:</strong> +62822 9611 9170<br>
-              <strong>Email:</strong> Hasrianiani@gmail.com<br>
+              <strong>Email:</strong> Miftahul@gmail.com<br>
             </p>
 
             <div class="social-links">

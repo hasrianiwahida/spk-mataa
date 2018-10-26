@@ -3,7 +3,15 @@ class Gejala_model extends CI_Model {
 
 	public function get_gejala(){
 
-		return $this->db->query("SELECT * FROM tbl_gejala JOIN tbl_kelompok_gejala on tbl_kelompok_gejala.id = tbl_gejala.id_klp_gejala")->result();
+		// return $this->db->query("SELECT * FROM tbl_gejala JOIN tbl_kelompok_gejala on tbl_kelompok_gejala.id = tbl_gejala.id_klp_gejala")->result();
+
+
+
+		return $this->db->select('*, tbl_gejala.id_gejala AS gid')
+						->from ('tbl_gejala')
+						->join ('tbl_kelompok_gejala','tbl_kelompok_gejala.id = tbl_gejala.id_klp_gejala')
+						->get()
+						->result_array();
 
 		
 	}
@@ -34,7 +42,6 @@ class Gejala_model extends CI_Model {
 		$gejala =$this->input->post('gejala');
 
 		$data =array(
-			'id_gejala'=>$id_gejala,
 			'id_klp_gejala'=>$id_klp_gejala,
 			'kd_gejala'=>$kd_gejala,
 			'gejala'=>$gejala,

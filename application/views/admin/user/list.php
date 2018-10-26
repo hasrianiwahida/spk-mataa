@@ -3,7 +3,7 @@
 		<div class="x_panel tile fixed_height_350">
 			<!-- <h3>user List</h3> -->
 			<br>
-			<a href="<?php echo site_url('/user/create') ?>" class="btn btn-primary" style="border-radius: 0px; font-size: 12px; background:#3399cc; border-color: #3399cc;"><i class="fa fa-plus-circle"></i>  Tambah user</a>
+			<a href="<?php echo site_url('/user/create') ?>" class="btn btn-primary" style="border-radius: 0px; font-size: 12px; background:#666666; border-color: #666666;"><i class="fa fa-plus-circle"></i>  Tambah +</a>
 			<br><br>
 			<table class="table table-bordered">
 				<thead>
@@ -28,8 +28,8 @@
 						<td><?php echo $user->alamat ?></td>
 
 						<td style="text-align: center; width: 200px;">
-								<a href="<?php echo site_url('/user/edit/').$user->id_user ?>" class="btn btn-primary btn-sm" style="border-radius: 0px; background: #3399cc; border-color: #3399cc;"><i class="fa fa-edit"></i> Edit</a>
-								<a href="<?php echo site_url('/user/hapus/').$user->id_user ?>" class="btn btn-danger btn-sm" style="border-radius: 0px;" onclick="javasciprt: return confirm('Apakah anda yakin ?')"><i class="fa fa-trash"></i> Hapus</a>
+								<a href="<?php echo site_url('/user/edit/').$user->id_user ?>" class="btn btn-primary btn-sm" style="border-radius: 0px; background: #666666; border-color: #666666;"><i class="fa fa-edit"></i> Edit</a>
+								<a href="<?php echo site_url('/user/hapus/').$user->id_user ?>" class="btn btn-info btn-sm" style="border-radius: 0px;" onclick="javasciprt: return confirm('Apakah anda yakin ?')"><i class="fa fa-trash"></i> Hapus</a>
 						</td>
 					</tr>
 					<?php endforeach ?>

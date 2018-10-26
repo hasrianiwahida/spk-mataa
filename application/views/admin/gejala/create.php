@@ -6,7 +6,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<h3>Tambah gejala</h3>
+							<h3>Tambah </h3>
 							<br>
 							<form action="<?php echo site_url() ?>/gejala/create" method = "POST">
 								<div class="container">
@@ -33,7 +33,7 @@
 
 												?>
 												<?php foreach ($kelompok_gejala->result() as $key){ ?>
-													<option value="<?php echo $key->id ?>"><?php echo $key->nama; ?></option>
+													<option value="<?php echo $key->id ?>"><?php echo $key->nama_klp; ?></option>
 												<?php } ?> 
 											
 											</select>
@@ -73,7 +73,7 @@
 									
 									<br>
 
-									<button type="submit" name="submit" class="btn btn-primary btn-sm" style="border-radius: 0px; background: #3399cc; border-color: #3399cc;">Simpan</button>
+									<button type="submit" name="submit" class="btn btn-primary btn-sm" style="border-radius: 0px; background: #666666; border-color: #666666;">Simpan</button>
 									<a href="<?php echo site_url('/gejala/index') ?>" class="btn btn-default btn-flat btn-sm" style="border-radius: 0px;">Batal</a>
 								</div>
 							</form>

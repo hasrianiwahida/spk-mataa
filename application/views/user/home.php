@@ -484,7 +484,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Address</h3>
-              <address>dr.Hasriani Amk,Jl. Jend. Sudirman No.27,Kota Makassar, Sulawesi Selatan 90157</address>
+              <address>dr.Miftahul Akhyar Latief,Sp.M Jl. Jend. Sudirman No.27,Kota Makassar, Sulawesi Selatan 90157</address>
             </div>
           </div>
 
@@ -500,7 +500,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="Hasrianiani@gmail.com">Hasrianiani@gmail.com</a></p>
+              <p><a href="Hasrianiani@gmail.com">Miftahulsp@gmail.com</a></p>
             </div>
           </div>
 

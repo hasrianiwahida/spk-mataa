@@ -1,4 +1,12 @@
 <div class="content" style="padding:10px 40px;">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
     <h3>Hasil Analisis</h3>
     <div class="box box-warning">
         <div class="box-header with-border">
@@ -54,6 +62,7 @@
                 <p>
                     Berdasarkan gejalanya, unggas tersebut di prediksi mengidap penyakit <b><?php echo $listPenyakit[0]['nama_penyakit'];?></b> dengan tingkat kepercayaan <b><?php echo $listPenyakit[0]['kepercayaan'];?> %</b><br/>
                     <?php echo $listPenyakit[0]['definisi'];?>
+
                 </p>
             <?php }else{?>
                 <p>

@@ -10,7 +10,7 @@ function __construct(){
 
 	public function index(){
         $data['contents'] ='admin/kelompok_gejala/list';  
-        $data['get_kelompok_gejala'] =$this->Kelompok_gejala_model->get_kelompok_gejala();
+        $data['get_klp_gejala'] =$this->Kelompok_gejala_model->get_kelompok_gejala();
         $this->load->view('templates/admin/index',$data);
 	}
 

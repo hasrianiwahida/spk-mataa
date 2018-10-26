@@ -1,24 +1,21 @@
 <?php 
 class Kelompok_gejala_model extends CI_Model {
 
-	public function get_Kelompok_gejala (){
-
+	public function get_kelompok_gejala (){
 		return $this->db->get('tbl_kelompok_gejala')->result();
-		// return $query->result();  
-		// $this->db->select('*');
-		// $this->db->from('tbl_kelompok_gejala');
-		// return $this->db->get();
-		
+
+		// $query =$this->db->query("SELECT * FROM tbl_kelompok_gejala");
+		// return $query->result();		
 	}
 
 	public function insert_kelompok_gejala(){
 		// $id =$this->input->post('id');
-		$nama =$this->input->post('nama');
+		$nama_klp =$this->input->post('nama_klp');
 		$keterangan =$this->input->post('keterangan');
 		
-		$query = $this->db->query("INSERT INTO tbl_kelompok_gejala (id,nama,keterangan)
+		$query = $this->db->query("INSERT INTO tbl_kelompok_gejala (id,nama_klp,keterangan)
 									VALUES 
-									('$id','$nama','$keterangan')");
+									('$id','$nama_klp','$keterangan')");
 			return $query; 
 	
 }
@@ -30,12 +27,12 @@ class Kelompok_gejala_model extends CI_Model {
 public function edit(){
 		// $id_gejala =$this->input->post('id_gejala');
 		$id =$this->input->post('id');
-		$nama =$this->input->post('nama');
+		$nama_klp =$this->input->post('nama_klp');
 		$keterangan =$this->input->post('keterangan');
 
 		$data =array(
 			'id'=>$id,
-			'nama'=>$nama,
+			'nama_klp'=>$nama_klp,
 			'keterangan'=>$keterangan,
 
 		);
@@ -50,7 +47,7 @@ public function edit(){
 	}
 	function get_list_data(){
         $this->db->select('*');
-        $this->db->from('kelompok_gejala_model');
+        $this->db->from('tbl_kelompok_gejala');
         return $this->db->get();
     }
 }
